@@ -31,7 +31,6 @@ You can check how your program is doing by running the tests from the makefile:
 - All the above, plus:
 - Your output should exactly match the punctuation of the input string.
 - It should also match the formatting (capitalization, white-space) of the input string.
-- If the distance to the nearest dictionary match is > 12, use the original non-dictionary word.
 
 ### Sr
 
@@ -40,6 +39,7 @@ You can check how your program is doing by running the tests from the makefile:
 - All keys on your keyboard are separated by some shortest path (A -> Z = 1, Z -> P = 9).
 - To find the distance between characters in words, you'll add +N instead of hamming +1.
 - N is the keyboard distance between the desired key and the one your user fat-fingered.
+- If the distance to the nearest dictionary match is > 12, use the original non-dictionary word.
 
 ## Tools at your disposal
 
@@ -85,6 +85,6 @@ Flood, has big bum pie deep women!
 
 I'll post the code to these awesome solutions in a few days, so everyone has time to hack.
 
-- @elaforc - Jr Mid Sr - 138 lines - 1.910s (!!!)
+- @elaforc - Sr - 138 lines - 1.910s (!!!)
 - @snodgrass23 - Jr Mid - 147 lines - 14.207s
-- @hunterloftis - Jr Mid Sr - 155 lines - 3.111s (first try: 4x slower)
+- @hunterloftis - Jr Mid Sr - 160 lines - 1.477s (using the early bailout idea from @elaforc)
